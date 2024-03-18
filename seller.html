@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 2</title>
+    <script
+      src="https://kit.fontawesome.com/0e53af926d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar starts here -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+
+    <nav id="menu" class="hidden">
+      <ul class="nav-uppper flex-space-around">
+        <li class="nav_list">
+          <a href="index.html" class="nav_list">Home</a>
+        </li>
+        <li class="nav_list">
+          <a href="register.html" class="nav_list">Register</a>
+        </li>
+        <li class="nav_list">
+          <a href="login.html" class="nav_list">Login</a>
+        </li>
+        <li class="nav_list">
+          <a href="index.html" class="nav_list">Logout</a>
+        </li>
+        <li class="nav_list">
+          <a href="contact.html" class="nav_list">Contact</a>
+        </li>
+        <li class="nav_list">
+          <a href="profile.html" class="nav_list">
+            <img class="profile-icon" src="./images/3.png" alt="profile icon" />
+          </a>
+        </li>
+      </ul>
+      <ul class="nav-lower flex-space-around">
+        <li class="nav_list">
+          <a href="index.html" class="nav_brand nav_link">Arpita Express</a>
+        </li>
+        <li class="nav_list">
+          <a href="cart.html" class="nav_link"
+            ><span><i class="fa-solid fa-cart-shopping"></i></span> cart 2
+            products-$124.40</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar ends here -->
+    <main>
+      <section class="seller_session">
+        <h2 class="section-title text-center">Add Products</h2>
+        <div class="card">
+          <form action="" class="form">
+            <div class="form-control flex-center">
+              <label for="name">Product name</label>
+              <input type="text" id="name" required autocomplete="name" />
+            </div>
+
+            <div class="form-control flex-center">
+              <label for="price">Price</label>
+              <input type="number" id="price" required autocomplete="price" />
+            </div>
+            <div class="form-control flex-center">
+              <label for="image">Image</label>
+              <input
+                type="file"
+                accept="image/*"
+                id="image"
+                required
+                autocomplete="image"
+              />
+            </div>
+
+            <div class="actions_sort">
+              <label for="sort"> Categories: </label>
+              <select name="sort" id="sort">
+                <option value="sold">
+                  Watch
+                </option>
+                <option value="rating">
+                  Computer
+                </option>
+                <option value="price">
+                  Telivisions
+                </option>
+                <option value="arrival">
+                  Mobile
+                </option>
+                <option value="discount">
+                  Add more
+                </option>
+              </select>
+            </div>
+            <div class="form-control flex-center form-btn-field">
+            <button type="submit" class="btn contact-btn">Save</button>
+            </div>
+          </form>
+          </div>
+          <h2 class="seller">Accept order</h2>
+          <div class="card">
+        <h2>View placed order</h2><br>
+		<input  type="radio"value="accept"name="order">
+        <label for="accept">Accept</label>
+		<input type="radio"value="decline" name="order">
+        <label for="decline">Decline</label>
+            </div>
+
+            <div class="card">
+                <h2>Ship</h2>
+                <input type="checkbox" id="check">
+		<label for="check" >Headover to the courier service</label>
+            </div>
+            
+                <button type="submit" class="btn contact-btn">Save</button>
+        
+      </section>
+    </main>
+
+    <!-- footer starts here -->
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">subscribe to Newsletter:</label>
+        <input
+          type="email"
+          id="subscribe"
+          name="subscribe"
+          class="footer_input"
+          placeholder="Your Email Address"
+        />
+        <button class="btn btn-subscribe">subscribe</button>
+      </div>
+      <div>
+        <p>copyright 2024 Arpita Express.All rights rserved</p>
+      </div>
+    </footer>
+    <!-- footer ends here -->
+
+    <script src="./script/index.js"></script>
+  </body>
+</html>
