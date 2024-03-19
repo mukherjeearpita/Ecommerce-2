@@ -275,7 +275,7 @@ main {
 .cart_items {
   flex: 1;
 }
-.cart_item-action {
+.cart_items-action{
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
